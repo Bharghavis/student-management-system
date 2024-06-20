@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content at the top */
+    height: 100vh;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    margin-top: 20px; /* Add margin to create space from the top */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+@keyframes rotateLeftToRight {
+    0%, 100% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+}
+
+.welcome-header {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 15,
+        "SHLN" 50;
+    text-align: center;
+    font-size: 5.5em; /* Adjust font size as needed */
+    margin-bottom: 30px; /* Optional: Add margin bottom */
+    margin-top: 10px;
+    animation: rotateLeftToRight 2s ease-out forwards;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Increased space between buttons */
+    margin-top: 100px; /* Adjust margin top to move buttons further down */
+    max-width: 600px;
+}
+
+.buttons button {
+    flex: 1; /* Equal width for all buttons */
+    width: 100%; /* Ensure buttons take full width of their container */
+    max-width: 200px; /* Optional: Set maximum width for each button */
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+
+}
+
+
+.buttons button:hover {
+    background-color: orange;
+    color: white;
+}
+
+.section {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+button.back {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.back:hover {
+    background-color: orange;
+    color: black;
+}
+
+.plus-image {
+    position: absolute;
+    top: 300px; 
+    left: 380px; 
+    width: 100px; 
+    height: 100px; 
+}
+
+.view-image {
+    position: absolute;
+    top: 300px; 
+    left: 590px; 
+    width: 100px; 
+    height: 100px; 
+}
+
+.glass-image {
+    position: absolute;
+    top: 320px; 
+    left: 800px; 
+    width: 70px; 
+    height: 70px; 
+}
+
+#student-details-form {
+    text-align: left; /* Align form elements to the left */
+}
+
+#student-details-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#student-details-form input[type="text"],
+#student-details-form input[type="email"],
+#student-details-form input[type="tel"] {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Basic styling for the form */
+#student-details-form {
+    max-width: 400px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items horizontally */
+    margin-top: 3%;
+}
+
+/* Styling for form groups */
+.form-group {
+    margin-bottom: 20px; /* Spacing between form groups */
+    width: 100%; /* Ensure form groups take up full width */
+}
+
+/* Styling for inputs */
+.form-group input {
+    width: 100%; /* Take up full width */
+    padding: 10px; /* Padding for input fields */
+    border: 1px solid #ccc; /* Basic border */
+    border-radius: 4px;
+    font-size: 12px; /* Adjust font size */
+}
+
+/* Button styling */
+#student-details-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%; /* Take up full width */
+    max-width: 200px; /* Optional: Limit max-width */
+}
+
+#student-details-form button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.rectangle {
+    width: 100%;
+    height: 20px;
+    padding: 10px 0;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.rectangle h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+#back-to-portal {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    position: relative; /* Change to relative positioning */
+    margin-left: auto; /* Pushes the image to the right */
+    margin-right: 10px; /* Adds some margin from the right */
+    display: block; 
+}
+
+#back-to-portal:hover {
+    transform: scale(1.1);
+}
+
+#phone-error {
+    display: none;
+    color: red;
+    margin-top: 5px;
+}
+
+
+#display-student {
+    display: none; /* Initially hide the display student details section */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    margin-top: 20px;
+}
+
+#student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+#student-table th, #student-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    color: black; /* Set text color to black */
+}
+
+#student-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#student-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#student-table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+
+#display-student button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#display-student button:hover {
+    background-color: #0056b3;
+}
